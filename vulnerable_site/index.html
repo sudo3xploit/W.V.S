@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureTech Solutions | Cybersecurity Services</title>
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS for styling -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .navbar {
+            background-color: #1f2937;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 600;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px 0;
+        }
+        .form-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .form-container form {
+            display: inline-block;
+            max-width: 600px;
+            width: 100%;
+        }
+        .form-container input {
+            padding: 12px;
+            width: 70%;
+            border: 1px solid #e5e7eb;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .form-container button {
+            padding: 12px 25px;
+            background-color: #f15b2a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #d1461c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>SecureTech Solutions</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Vulnerable SQL Injection Form -->
+    <div class="form-container">
+        <form action="search.php" method="GET">
+            <input type="text" name="query" placeholder="Search..." />
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Vulnerable XSS Form -->
+    <div class="form-container">
+        <form action="comment.php" method="POST">
+            <input type="text" name="comment" placeholder="Leave a comment..." />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
